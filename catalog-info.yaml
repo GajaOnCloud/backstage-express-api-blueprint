@@ -6,3 +6,5 @@ spec:
   type: service
   owner: ${{ values.owner }}
   lifecycle: experimental
+  dependsOn: 
+    - resource:${{ values.name | dump }}-ec2
