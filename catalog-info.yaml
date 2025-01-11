@@ -7,4 +7,4 @@ spec:
   owner: ${{ values.owner }}
   lifecycle: experimental
   dependsOn: 
-    - resource:${{ values.name | dump }}-ec2
+    - resource: "${{ values.name + '-ec2' }}"
