@@ -1,10 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: ${{ values.name | dump }}
+  name: ${{ values.project-name | dump }}
 spec:
   type: service
   owner: ${{ values.owner }}
   lifecycle: experimental
-  dependsOn: 
-    - "${{ 'resource:' + values.name + '-ec2' }}"
+
